@@ -1,0 +1,92 @@
+	@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Gudea);
+
+
+
+
+.image-aboutus-sm-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom:20px;
+	align: center;
+ }
+ .image-aboutus-sm-banner p {
+    color:#fff;
+}
+body {
+
+    padding: 10px;
+
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+@media only screen and (max-width: 9000px) {
+
+	  .lg-text {
+		font-size:100px;
+		font-weight: 900;
+		text-transform: none;
+		color:#fff;
+		font-family: 'Fjalla One', sans-serif;
+		text-align:center;
+		}
+	.sb-text {
+		font-size:40px;
+		font-weight: 100;
+		text-transform: none;
+		color:#fff;
+		font-family:Lucida Sans Unicode;
+		text-align:center;
+	}
+	nav a img {
+		width: 100px;
+
+	}
+
+	.espacado{
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+	.form-busca-site{
+
+	}
+
+}
+@media  screen and (max-width: 420px) {
+	.lg-text {
+		font-size:50px;
+		font-weight: 900;
+		text-transform: none;
+		color:#fff;
+		font-family: 'Fjalla One', sans-serif;
+		text-align:center;
+	}
+	.sb-text {
+		font-size:20px;
+		font-weight: 100;
+		text-transform: none;
+		color:#fff;
+		font-family:Lucida Sans Unicode;
+		text-align:center;
+	}
+		.espacado{
+		padding:20px;
+
+	}
+	body {
+
+    padding: 2px;
+    background: #f1f1f1;
+	}
+
+}
