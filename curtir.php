@@ -8,7 +8,7 @@ if(isset($_SERVER['HTTP_REFERER'])){
 	$urls = explode("?", $_SERVER['HTTP_REFERER']);
 	$url_busca=$urls[0];
 
-	if(($url_busca == 'http://localhost/site/jogo/index.php') || ($url_busca == 'http://localhost/site/jogo/'))
+	if(($url_busca == $url.'jogo/index.php') || ($url_busca == $url.'jogo/'))
 	{//verifica se está vindo dessa página, e impede de executar o codigo sem completar o form
     $conexao = new Connection();
 
@@ -21,14 +21,14 @@ if(isset($_SERVER['HTTP_REFERER'])){
       if($total >0){
         $string = "DELETE FROM curtidas WHERE id_u = ".$_SESSION['id_usuario']." and id_j = ".$_SESSION['id_j'];
         $conexao->query($string);
-        header("location: ../site/jogo/?id=".$_SESSION['id_j']);
+        header("location: ".$url."jogo/?id=".$_SESSION['id_j']);
       }
       if($total==0){
         $id_u = $_SESSION['id_usuario'];
         $id_j = $_SESSION['id_j'];
         $string = "INSERT INTO curtidas(id_j,id_u) values (".$id_j.",".$id_u.")";
         $conexao->query($string);
-        header("location:../site/jogo/?id=".$_SESSION['id_j']);
+        header("location:".$url."jogo/?id=".$_SESSION['id_j']);
       }
 
       echo "</br>";

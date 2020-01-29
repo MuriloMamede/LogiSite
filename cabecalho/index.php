@@ -67,8 +67,8 @@ session_start();
 
           	}
            else{
-             echo'<li><a href="/site/cadastrar/"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
-   					<li><a href="/site/entrar/"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+             echo'<li><a href="'.$url.'cadastrar/"><span class="glyphicon glyphicon-user"></span> Cadastrar</a></li>
+   					<li><a href="'.$url.'entrar/"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
    				  </ul>';
 
            }?>

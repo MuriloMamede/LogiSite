@@ -75,36 +75,13 @@
 			return $row;
 		}
 
-		function free_result()
-		{
-			mysqli_free_result($this->result);
-		}
+		
 
 		function close()
 		{
 			mysqli_close($this->link);
 		}
 
-		function last_id()
-		{
-			return mysqli_insert_id($this->link);
-		}
-
-		function insertSeguro($firstname, $lastname, $gym, $dateOfBirth, $category)
-		{
-			$string = "INSERT INTO competitor (firstname, lastname, gym, dateOfBirth, category)
-						VALUES(?, ?, ?, ?, ?)";
-
-			$stmt = mysqli_prepare($this->link, $string);
-
-			if($stmt == TRUE)
-			{
-
-				mysqli_stmt_bind_param($stmt, "sssss", $firstname, $lastname, $gym, $dateOfBirth, $category);
-
-				mysqli_stmt_execute($stmt);
-			}
-		}
+		
 	}
-
 ?>

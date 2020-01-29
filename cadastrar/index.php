@@ -40,7 +40,7 @@ include_once "../function.php";
 
 <?php
 
-if(($_SERVER['HTTP_REFERER'] === 'http://localhost/site/cadastrar/') || ($_SERVER['HTTP_REFERER'] === 'http://localhost/site/cadastrar/index.php') )
+if(($_SERVER['HTTP_REFERER'] === $url.'cadastrar/') || ($_SERVER['HTTP_REFERER'] === $url.'cadastrar/index.php') )
 {//verifica se está vindo dessa página, e impede de executar o codigo sem completar o form
   $conexao = new Connection();
 

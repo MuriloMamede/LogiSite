@@ -5,3 +5,4 @@
 	$database = "site";
 	$url = "http://localhost/site/"; // change this to your url
 ?>
+

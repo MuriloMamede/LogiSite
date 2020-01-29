@@ -48,7 +48,7 @@ if(isset($_SERVER['HTTP_REFERER'])){
 	$urls = explode("?", $_SERVER['HTTP_REFERER']);
 	$url_busca=$urls[0];
 
-	if(($_SERVER['HTTP_REFERER'] === 'http://localhost/site/buscar/') || ($_SERVER['HTTP_REFERER'] === 'http://localhost/site/buscar/index.php')  || ($url_busca == 'http://localhost/site/buscar/') || ($url_busca == 'http://localhost/site/buscar/index.php') )
+	if(($_SERVER['HTTP_REFERER'] === $url.'buscar/') || ($_SERVER['HTTP_REFERER'] === $url.'buscar/index.php')  || ($url_busca == $url.'site/buscar/') || ($url_busca == $url.'buscar/index.php') )
 	{//verifica se está vindo dessa página, e impede de executar o codigo sem completar o form
 	if(isset($_GET['busca'])){
 
