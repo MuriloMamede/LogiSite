@@ -4,4 +4,4 @@ Projeto desenvolvido usando PHP puro, HTML5, JavaScript, W3CSS, Bootstrap e como
 
 Deve-se alterar o usuario, senha e url para funcionamento correto.
 
-![](img/editUrl.png)
+![](img/editUrl.PNG)
